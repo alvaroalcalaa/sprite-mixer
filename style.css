@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap');
+:root{--ink:#132323;--paper:#e9e5d7;--lime:#c9f25d;--pink:#ff5b81}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Mono",monospace}
+.app{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;max-width:1120px;margin:auto;padding:7vw;gap:7vw;align-items:center}
+.eyebrow{font-size:.72rem;letter-spacing:.14em;color:#55605b}h1{font:800 clamp(4rem,10vw,7.8rem)/.78 Syne,sans-serif;letter-spacing:-.08em;margin:.2em 0 .22em}h1 em{color:#e54b6b;font-style:normal}.intro>p:not(.eyebrow){max-width:29rem;line-height:1.65}
+.controls{margin-top:2.5rem;display:grid;gap:.7rem}label{font-size:.72rem;text-transform:uppercase;letter-spacing:.09em;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #b8b5a8;padding:.7rem 0}
+select,button{font:inherit;border:0;background:transparent;color:inherit;cursor:pointer}select{font-size:.82rem;text-align:right}.actions{display:flex;gap:.6rem;margin-top:1.1rem}button{padding:.85rem 1rem;background:var(--ink);color:var(--paper);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}.ghost{background:transparent;color:var(--ink);outline:1px solid var(--ink)}
+.frame{background:#182c2c;padding:1.4rem;box-shadow:15px 15px 0 var(--lime)}canvas{display:block;width:100%;image-rendering:pixelated;background:#243b3a}.meta{margin-top:1.7rem;display:flex;justify-content:space-between;align-items:center;font-size:.7rem;letter-spacing:.06em}.export{background:#e54b6b;font-size:.65rem}
+button:hover{transform:translateY(-2px)}@media(max-width:720px){.app{grid-template-columns:1fr;padding:12vw 8vw;gap:4rem}.stage{max-width:430px}.meta{gap:1rem}}
