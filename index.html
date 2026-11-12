@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sprite Mixer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="intro">
+      <p class="eyebrow">PIXEL CHARACTER LAB</p>
+      <h1>Sprite<br><em>Mixer</em></h1>
+      <p>Blend a class, mood, and palette into a ready-to-export retro avatar.</p>
+      <div class="controls">
+        <label>Class <select id="class"><option value="warrior">Warrior</option><option value="mage">Mage</option><option value="scout">Scout</option></select></label>
+        <label>Mood <select id="mood"><option value="calm">Calm</option><option value="alert">Alert</option><option value="angry">Angry</option></select></label>
+        <label>Palette <select id="palette"><option value="forest">Forest</option><option value="neon">Neon</option><option value="fire">Fire</option></select></label>
+        <div class="actions"><button id="mix">Mix sprite</button><button id="random" class="ghost">Surprise me</button></div>
+      </div>
+    </section>
+    <section class="stage">
+      <div class="frame"><canvas id="sprite" width="256" height="256" aria-label="Generated pixel sprite"></canvas></div>
+      <div class="meta"><span id="caption">FOREST WARRIOR · CALM</span><button id="export" class="export">Export PNG ↓</button></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
